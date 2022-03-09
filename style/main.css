@@ -1,0 +1,309 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #ECEEF1;
+}
+
+.main-container {
+  background: white;
+  width: 400px;
+  margin: auto;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 2rem;
+}
+
+header {
+  margin-top: 1.5rem;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex.gap-16 {
+  gap: 1rem;
+}
+
+.d-flex.justify-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-flex.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.d-flex .grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+svg.setting, svg.search, svg.filter {
+  width: 20px;
+  height: 20px;
+}
+
+svg.more {
+  width: 24px;
+  height: 4px;
+}
+
+svg.next {
+  width: 10px;
+  height: 18px;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  padding: 3px;
+  -webkit-box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.avatar .badge {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  position: absolute;
+  top: 6px;
+  right: -3px;
+  background: #2ACB97;
+  color: white;
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.group-header .sub {
+  color: #857F72;
+  font-size: 0.8rem;
+}
+
+.group-header .main {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 1.5rem;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.7rem 3rem;
+  border-radius: 3rem;
+  border: none;
+  background: #E8E6E1;
+}
+
+.search-box svg.search {
+  position: absolute;
+  left: 0.8rem;
+}
+
+.search-box svg.filter {
+  position: absolute;
+  right: 0.8rem;
+}
+
+.search-box svg.search, .search-box svg.filter {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+section h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.horizontal-article-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+article .sub {
+  color: #625D52;
+  font-size: 0.85rem;
+}
+
+article.portrait {
+  width: 115px;
+  overflow: hidden;
+}
+
+article.portrait img {
+  width: 100%;
+  height: 134px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+article.portrait .sub {
+  margin-top: 0.25rem;
+}
+
+article.portrait .title, article.portrait .sub {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+article.landscape {
+  margin-top: 1rem;
+}
+
+article.landscape .img-container {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+article.landscape .img-container img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+
+article.landscape .img-container .chapter-badge, article.landscape .img-container .type-badge {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+  position: absolute;
+  border-radius: 1rem;
+}
+
+article.landscape .img-container .chapter-badge {
+  left: 1rem;
+  bottom: 1rem;
+  background: #323232;
+  color: white;
+}
+
+article.landscape .img-container .type-badge {
+  top: 1rem;
+  right: 1rem;
+  background: #FD707A;
+  color: black;
+}
+
+footer {
+  margin: 1.5rem -1rem 0 -1rem;
+  background: #FC6766;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+footer .indicator {
+  position: absolute;
+  width: 2rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background: white;
+  top: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer .sub-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+footer .sub-title--sub {
+  color: #504A40;
+  font-weight: normal;
+}
+
+footer .continue-container {
+  border-radius: 2rem;
+  background: white;
+  padding: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.8rem;
+}
+
+footer .continue-container img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+}
+
+footer .continue-container .group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */
